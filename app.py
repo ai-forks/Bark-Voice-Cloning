@@ -382,7 +382,7 @@ while run_server:
 
         restart_server = False
         try:
-            barkgui.queue().launch(show_error=True, server_name=settings.server_name, server_port=settings.server_port)
+            barkgui.queue().launch(show_error=True, server_name=settings.server_name)
         except:
             restart_server = True
             run_server = False
