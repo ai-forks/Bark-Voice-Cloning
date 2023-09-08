@@ -292,7 +292,7 @@ while run_server:
 
     # Create Gradio Blocks
 
-    with gr.Blocks(title=f"{APPTITLE}", mode=f"{APPTITLE}", theme=settings.selected_theme, server_name=settings.server_name) as barkgui:
+    with gr.Blocks(title=f"{APPTITLE}", mode=f"{APPTITLE}", theme=settings.selected_theme) as barkgui:
         gr.Markdown("# <center>🐶🎶⭐ - Bark Voice Cloning</center>")
         gr.Markdown("## <center>🤗 - If you like this space, please star my [github repo](https://github.com/KevinWang676/Bark-Voice-Cloning)</center>")
         gr.Markdown("### <center>🎡 - Based on [bark-gui](https://github.com/C0untFloyd/bark-gui)</center>")
@@ -382,7 +382,7 @@ while run_server:
 
         restart_server = False
         try:
-            barkgui.queue().launch(show_error=True)
+            barkgui.queue().launch(show_error=True, server_name=settings.server_name, server_port=settings.server_port)
         except:
             restart_server = True
             run_server = False
