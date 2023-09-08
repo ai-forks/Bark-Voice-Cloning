@@ -308,7 +308,7 @@ while run_server:
             with gr.Row():
                 with gr.Column():
                     #initialname = "/content/Bark-Voice-Cloning/bark/assets/prompts/file"
-                    initialname = "./bark/assets/prompts/file"
+                    initialname = "./bark/assets/prompts/custom"
                     print(f"===>initialname={initialname}")
                     output_voice = gr.Textbox(label="Filename of trained Voice (do not change the initial name)", lines=1, placeholder=initialname, value=initialname, visible=False)
                 with gr.Column():
