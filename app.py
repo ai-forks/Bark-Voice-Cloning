@@ -277,6 +277,7 @@ while run_server:
     speakers_list = []
 
     for root, dirs, files in os.walk("./bark/assets/prompts"):
+        print(f"=======>root={root} dirs={dirs}")
         for file in files:
             if file.endswith(".npz"):
                 pathpart = root.replace("./bark/assets/prompts", "")
