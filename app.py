@@ -261,6 +261,7 @@ prepare_training_list = ["Step 1: Semantics from Text","Step 2: WAV from Semanti
 
 seed = -1
 server_name = settings.server_name
+print(f"server_name={server_name}")
 if len(server_name) < 1:
     server_name = None
 server_port = settings.server_port
