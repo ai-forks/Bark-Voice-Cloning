@@ -312,7 +312,7 @@ while run_server:
                     print(f"===>initialname={initialname}")
                     output_voice = gr.Textbox(label="Filename of trained Voice (do not change the initial name)", lines=1, placeholder=initialname, value=initialname, visible=False)
                 with gr.Column():
-                    tokenizerlang = gr.Dropdown(tokenizer_language_list, label="Base Language Tokenizer", value=tokenizer_language_list[1], visible=False)
+                    tokenizerlang = gr.Dropdown(tokenizer_language_list, label="Base Language Tokenizer", value=tokenizer_language_list[0], visible=False)
             with gr.Row():
                 clone_voice_button = gr.Button("Create Voice", variant="primary")
             with gr.Row():

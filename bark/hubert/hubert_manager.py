@@ -41,8 +41,8 @@ class HuBERTManager:
                 repo = 'Hobis/bark-voice-cloning-polish-HuBERT-quantizer'
                 model = 'polish-HuBERT-quantizer_8_epoch.pth'
             elif tokenizer_lang == 'zh':
-                repo = 'Hobis/bark-voice-cloning-polish-HuBERT-quantizer'
-                model = 'polish-HuBERT-quantizer_8_epoch.pth'
+                repo = 'TencentGameMate/chinese-hubert-large'
+                model = 'chinese-hubert-large-fairseq-ckpt.pt'
             else:
                 raise 'Unknown Tokenizer Language!'
             print(f'{local_file} not found. Downloading HuBERT custom tokenizer')
